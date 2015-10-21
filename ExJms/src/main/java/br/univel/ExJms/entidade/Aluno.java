@@ -1,7 +1,11 @@
 package br.univel.ExJms.entidade;
 
-public class Aluno {
+import java.io.Serializable;
+
+public class Aluno implements Serializable {
+	
 	private String nome;
+	private Long matricula;
 
 	public String getNome() {
 		return nome;
@@ -11,9 +15,17 @@ public class Aluno {
 		this.nome = nome;
 	}
 
+	public Long getMatricula() {
+		return matricula;
+	}
+
+	public void setMatricula(long l) {
+		this.matricula = l;
+	}
+
 	@Override
 	public String toString() {
-		return "Aluno [nome=" + nome + "]";
+		return "Aluno [nome=" + nome + ", matricula=" + matricula + "]";
 	}
 	
 	
