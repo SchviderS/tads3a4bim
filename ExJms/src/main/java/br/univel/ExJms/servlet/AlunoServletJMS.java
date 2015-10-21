@@ -26,7 +26,7 @@ import br.univel.ExJms.entidade.Aluno;
 public class AlunoServletJMS extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
-	@Resource(mappedName = "java:/queue/alunoQueue")
+	@Resource(mappedName = "java:jboss/exported/jms/queue/alunoQueue")
 	private Queue fila;
  
 	@Resource(mappedName = "java:/ConnectionFactory")
