@@ -1,4 +1,4 @@
-package br.univel.entidade;
+package exercise2;
 
 public class Item {
 	
