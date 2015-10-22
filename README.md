@@ -18,3 +18,9 @@ Tutorial Base: http://www.feltex.com.br/felix/exemplo-completo-jsf-primefaces-ej
 Tutorial Base: http://www.feltex.com.br/felix/exemplo-completo-com-jsf-primefaces-ejb-hibernate-mysql-jms-topic/
 
 - O tutorial utiliza o servlet com a vers'ao JMS 2.0, mas como o Forge utiliza a 1.1, foi pego como base o exemplo anterior, da implementação do servlet para o aluno na versão 1.1 e reformulada para trabalhar com Topic e com a classe Professor.
+
+
+ExCDI
+
+Tutorial Base: https://netbeans.org/kb/docs/javaee/cdi-inject_pt_BR.html
+
