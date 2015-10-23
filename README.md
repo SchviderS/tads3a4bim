@@ -24,3 +24,42 @@ ExCDI
 
 Tutorial Base: https://netbeans.org/kb/docs/javaee/cdi-inject_pt_BR.html
 
+Foi criado o arquivo Process.xhtml do tutorial dentro da pasta src > main > webapp;
+Também foi preciso criar um arquivo web.xml, dentro da pasta src > main > webapp > WEB-INF com o seguinte conteúdo:
+
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://java.sun.com/xml/ns/javaee" xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
+	id="WebApp_ID" version="3.0">
+	<display-name>tutorialWeb</display-name>
+	<welcome-file-list>
+		<welcome-file>Process.xhtml</welcome-file>
+	</welcome-file-list> <!-- JSF -->
+	<servlet>
+		<servlet-name>Faces Servlet</servlet-name>
+		<servlet-class>javax.faces.webapp.FacesServlet</servlet-class>
+		<load-on-startup>1</load-on-startup>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Faces Servlet</servlet-name>
+		<url-pattern>*.xhtml</url-pattern>
+	</servlet-mapping>
+</web-app>
+
+Para poder fazer o passo do tutorial que pedia que fosse alterada a página inicial do projeto, foi preciso criar este arquivo, e também fazer o Setup do projeto para CDI.
+
+
+ExJSF/Primefaces
+
+Tutorial Base: https://computacaoanotada.wordpress.com/2011/07/15/aplicacao-ejb-3-1-jsf2-primefaces-3-0-maven-parte-1/
+
+Foi criado um projeto maven do tipo War somente, sem alterar o pom.xml;
+
+A parte 2 do tutorial fala sobre implementar um DAO, foi utilizado um EntityManager injetado para fazer a parte do DAO de buscar a lista de produtos;
+
+O projeto teve seu setup feito para JSF;
+
+
+
+ 
