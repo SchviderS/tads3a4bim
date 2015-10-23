@@ -14,12 +14,14 @@ import br.univel.service.ProdutoBean;
 @RequestScoped
 public class TesteBean {
  
-    @EJB ProdutoBean produtoBean;
+    @EJB 
+    ProdutoBean produtoBean;
      
     List<Produto> produtos;
  
     @PostConstruct
     public void init() {
+    produtoBean.cadastrar();	
     produtos = produtoBean.findAllProduto();
     }
 }
