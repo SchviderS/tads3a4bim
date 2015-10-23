@@ -20,8 +20,7 @@ public class TesteBean {
     List<Produto> produtos;
  
     @PostConstruct
-    public void init() {
-    produtoBean.cadastrar();	
-    produtos = produtoBean.findAllProduto();
+    public void init() {	
+    	produtos = produtoBean.findAllProduto();
     }
 }
