@@ -11,6 +11,7 @@ import javax.inject.Named;
 public class ItemProcessor {
 
 	@Inject
+	@Demo
     private ItemDao itemDao;
 
     public void execute() {
